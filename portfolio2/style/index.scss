@@ -1,0 +1,408 @@
+@mixin quantum {
+    width: 10%;
+    margin: 5%;
+    transition: transform .2s;
+
+    &:hover{
+        transform: scale(1.5);
+    }
+    
+}
+@mixin quantum2 {
+    width: 30%;
+    margin: 8%;
+    transition: transform .2s;
+
+    &:hover{
+        transform: scale(1.5);
+    }
+    
+}
+
+
+
+body{
+    margin: auto;
+    padding: auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+#fan{
+    animation: fan 1.5s infinite ;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+@keyframes fan{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+
+    }
+}
+
+.navbar-custom {
+    background-color:#333;
+}
+
+nav .navbar-nav li a{
+    color: white !important;
+    opacity: 0.6;
+    &:hover{
+        opacity: 1;
+        color: white !important;
+    }
+}
+
+#one{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    img{
+        width: 100%;
+        opacity: 0.8;
+    }
+    #info{
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        #icons{
+            width: fit-content;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            i{
+                margin: 0 auto;
+                margin-left: 10px;;
+                padding: 7px;
+                transition: transform .2s;
+                border: white 2px solid;
+
+                    &:hover{
+                    transform: scale(1.2);
+                    }                
+            }
+        }
+
+        h1{
+            font-family: 'Lemonada', cursive;
+            font-weight: 150;
+            text-align: center;
+            color: white;
+        }
+        h2{
+            font-family: 'Dancing Script', cursive;
+            font-weight: 100; 
+            font-size: larger;
+            text-align: center;
+            color: white;
+
+        }
+        p{
+            font-family: 'Pacifico', cursive;
+            font-weight: 140; 
+            text-align: center;  
+            font-size: large;
+            color: white;
+
+
+            strong{
+                background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                animation: rainbow_animation 4s ease-in-out infinite;
+                background-size: 400% 100%;
+            }  
+        }
+    }
+}
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+#two{
+    margin: 0 auto;
+    h1{
+        font-family: 'Lemonada', cursive;
+        font-weight: 150;
+        text-align: center;
+        color: black;
+        text-decoration: underline;
+    }
+    #pic{
+        height: 100vh;
+
+    #flappy{
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        display: inline-block;
+        margin: 1%;
+        border-radius: 50%;
+        
+    }
+
+}
+    #info1{
+        a{
+            text-decoration: none;
+            color: lightcoral;
+        }
+        h2{
+            font-family: 'Lemonada', cursive;
+            font-weight: 100; 
+            font-size: xx-large;
+            color: black;
+    
+        }
+        p{
+            font-family: 'Source Code Pro', monospace;
+            font-weight: 140; 
+            text-align: left; 
+            font-size: large;
+            color: black;
+        }
+        strong{
+            font-weight: bold;
+        }
+        svg{
+            width: 350px;
+            height: auto;
+        }
+        #Cirlce{
+            animation: wheel 1.5s infinite linear;
+            transform-origin: center;
+            transform-box: fill-box;
+    }
+    
+        @keyframes wheel{
+            from{
+                transform: rotateY(0deg);
+            }
+            to{
+                transform: rotateY(360deg);
+        
+            }
+        }
+        #Petal{
+            animation: petal 2s infinite alternate;
+            transform-origin: center;
+            transform-box: fill-box;
+    }
+    @keyframes petal{
+        from{
+            transform: rotateY(0deg);
+        }
+        to{
+            transform: rotateY(40deg);
+    
+        }
+    }
+    }
+}
+
+#three{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#13547a,#80d0c7) ;
+
+    h1{
+        font-family: 'Lemonada', cursive;
+        font-weight: 150;
+        text-align: center;
+        color: black;
+        text-decoration: underline;
+    }
+    #front{
+        text-align: center;
+        img,svg{
+            @include quantum();
+        }
+        h2{
+            font-family: 'Dancing Script', cursive;
+            font-weight: 100; 
+            font-size: larger;
+            text-align: center;
+            color: white;
+    
+        }
+    }
+    #back{
+        top: 50%;
+        text-align: center;
+        img{
+            @include quantum();
+       }
+       h2{
+        font-family: 'Dancing Script', cursive;
+        font-weight: 100; 
+        font-size: larger;
+        text-align: center;
+        color: white;
+
+    }
+    }
+}
+
+#four{
+    background-image: url(https://lh3.googleusercontent.com/YZ85zXgNFhFoG_y6PSUNfUI3zI7iKOZciyelX59A2W7PvPay_H-PhnBgWGkEy9CtCCi0QPb4Gz30e9RpuGM8Ixebzzlizo7bmkQWI74P_ll3hXoDHHZFNnmki26_0M3ZyLH7PrKJ29lhS-6buJh3F9DZjDvXKSuNbyD4D5mTiCTa3_Cwhxl4uozmoB8WgxgZw6-xBeeiv_XYCFOxNx-FkNPfoe6RsZidp6FsKv5Smp3W9YzYkbregKFoFyIXX_kd5kAM7sFjl2XLdXxpZq8EQx1tST7DClvJieJlvesLuyjK9aSDQxVtPjeDQc68lpby7XcAQ2aQD0T6qTLrIuWVn-1Fw0VWGGFmnc7TWg3v-wS5oIxboL2O6tN05rQrKgoiARxfYlxOEZcvr4-3YQI0N1nM7p5ZepHjyjBeo8VB0dz9gFGgkekGJ6NO9OSzsDsaUFXzCuOOnjZXcwADOXjBGn-Wop4gjCXJNaQpTXAeOEWwfbLz80bD4kSGtv-oEEtypTZ-Lgj6M6lwaaflG3xvhWsnMq1ZSyEpwzFoxlauITdk8UCu8X_8wi2usirmtSkDMxhnGpcgxEr9lZ38xaeVoovaoLNWpRcqw9aEYWIXReyHFGruZ_1ThHUOeGRQVO-95HuWFiWM1CzjCSxxqLQqxCSRhpPykE56TML-q61zeMiwV-_zUBQTVUgwfYAn=w1257-h943-no?authuser=0);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    h1{
+        font-family: 'Lemonada', cursive;
+        font-weight: 150;
+        text-align: center;
+        color: white;
+        text-decoration: underline;
+    }   
+
+    #micro{
+        height: 100vh;
+        img{
+            width: 100%;
+            height: 100vh;
+            opacity: 0.6;
+        }
+    }
+    #solar{
+        position: relative;
+        text-align: center;
+
+        h2{
+            font-family: 'Dancing Script', cursive;
+            font-weight: 100; 
+            font-size: larger;
+            text-align: center;
+            color: white;
+
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            margin: 4%;
+            padding: 5%;
+            box-shadow: 0 0 8px 2px rgba(226, 215, 215, 0.397);
+            transition: transform .5s;
+            border-radius: 5%;
+            &:hover{
+                transform: scale(1.02);
+                }           
+        
+        }
+        a{
+            font-size: large;
+            padding: 1%;
+            margin: 2%;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            border-radius: 20%;
+            margin-bottom: 20px;
+            &:hover{
+            color: #111; 
+            background: #14a1ff; 
+            box-shadow: 0 0 40px #14dcff; 
+
+            }
+
+        }
+    }
+
+}
+
+
+
+footer,form{
+    margin-top: 20px;
+    width: 100%;
+    background-color:black ;
+    color: white;
+}
+
+
+@media (max-width: 1000px) {
+    
+
+    #one{
+        width: auto;
+        height: 100vh;
+        overflow-y: hidden;
+        img{
+            overflow: hidden;
+        
+        }
+
+    }
+
+
+
+    #two{
+        overflow: hidden;
+        #pic{
+            height: auto;
+
+            #flappy{
+
+            display: none;
+            top: 0;
+            left: 0;
+    
+        }}
+        #info1{
+            display: contents;
+            position: relative;
+            width: auto;
+            
+    
+        }
+
+    }
+
+    #info1{
+        margin:auto;
+       h2,p{
+            margin: 0 auto;
+            text-align: center;
+        }
+        svg{
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+
+#three{
+    #front,#back{
+        img,svg{
+                @include quantum2();
+            
+        }
+    }
+}}
+
+#four{
+    #solar,img,a{
+        margin: 0 auto;
+    }
+}

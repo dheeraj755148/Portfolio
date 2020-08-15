@@ -1,0 +1,480 @@
+body {
+  margin: auto;
+  padding: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#fan {
+  -webkit-animation: fan 1.5s infinite;
+          animation: fan 1.5s infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes fan {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes fan {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+.navbar-custom {
+  background-color: #333;
+}
+
+nav .navbar-nav li a {
+  color: white !important;
+  opacity: 0.6;
+}
+
+nav .navbar-nav li a:hover {
+  opacity: 1;
+  color: white !important;
+}
+
+#one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+#one img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+#one #info {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#one #info #icons {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#one #info #icons i {
+  margin: 0 auto;
+  margin-left: 10px;
+  padding: 7px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  border: white 2px solid;
+}
+
+#one #info #icons i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#one #info h1 {
+  font-family: 'Lemonada', cursive;
+  font-weight: 150;
+  text-align: center;
+  color: white;
+}
+
+#one #info h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 100;
+  font-size: larger;
+  text-align: center;
+  color: white;
+}
+
+#one #info p {
+  font-family: 'Pacifico', cursive;
+  font-weight: 140;
+  text-align: center;
+  font-size: large;
+  color: white;
+}
+
+#one #info p strong {
+  background: -webkit-gradient(linear, left top, right top, from(#6666ff), color-stop(#0099ff), color-stop(#00ff00), color-stop(#ff3399), to(#6666ff));
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-animation: rainbow_animation 4s ease-in-out infinite;
+          animation: rainbow_animation 4s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@-webkit-keyframes rainbow_animation {
+  0%, 100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes rainbow_animation {
+  0%, 100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
+
+#two {
+  margin: 0 auto;
+}
+
+#two h1 {
+  font-family: 'Lemonada', cursive;
+  font-weight: 150;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+}
+
+#two #pic {
+  height: 100vh;
+}
+
+#two #pic #flappy {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  display: inline-block;
+  margin: 1%;
+  border-radius: 50%;
+}
+
+#two #info1 a {
+  text-decoration: none;
+  color: lightcoral;
+}
+
+#two #info1 h2 {
+  font-family: 'Lemonada', cursive;
+  font-weight: 100;
+  font-size: xx-large;
+  color: black;
+}
+
+#two #info1 p {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 140;
+  text-align: left;
+  font-size: large;
+  color: black;
+}
+
+#two #info1 strong {
+  font-weight: bold;
+}
+
+#two #info1 svg {
+  width: 350px;
+  height: auto;
+}
+
+#two #info1 #Cirlce {
+  -webkit-animation: wheel 1.5s infinite linear;
+          animation: wheel 1.5s infinite linear;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes wheel {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes wheel {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+#two #info1 #Petal {
+  -webkit-animation: petal 2s infinite alternate;
+          animation: petal 2s infinite alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes petal {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(40deg);
+            transform: rotateY(40deg);
+  }
+}
+
+@keyframes petal {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(40deg);
+            transform: rotateY(40deg);
+  }
+}
+
+#three {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#13547a), to(#80d0c7));
+  background-image: linear-gradient(#13547a, #80d0c7);
+}
+
+#three h1 {
+  font-family: 'Lemonada', cursive;
+  font-weight: 150;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+}
+
+#three #front {
+  text-align: center;
+}
+
+#three #front img, #three #front svg {
+  width: 10%;
+  margin: 5%;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+#three #front img:hover, #three #front svg:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+#three #front h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 100;
+  font-size: larger;
+  text-align: center;
+  color: white;
+}
+
+#three #back {
+  top: 50%;
+  text-align: center;
+}
+
+#three #back img {
+  width: 10%;
+  margin: 5%;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+#three #back img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+#three #back h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 100;
+  font-size: larger;
+  text-align: center;
+  color: white;
+}
+
+#four {
+  background-image: url(https://lh3.googleusercontent.com/YZ85zXgNFhFoG_y6PSUNfUI3zI7iKOZciyelX59A2W7PvPay_H-PhnBgWGkEy9CtCCi0QPb4Gz30e9RpuGM8Ixebzzlizo7bmkQWI74P_ll3hXoDHHZFNnmki26_0M3ZyLH7PrKJ29lhS-6buJh3F9DZjDvXKSuNbyD4D5mTiCTa3_Cwhxl4uozmoB8WgxgZw6-xBeeiv_XYCFOxNx-FkNPfoe6RsZidp6FsKv5Smp3W9YzYkbregKFoFyIXX_kd5kAM7sFjl2XLdXxpZq8EQx1tST7DClvJieJlvesLuyjK9aSDQxVtPjeDQc68lpby7XcAQ2aQD0T6qTLrIuWVn-1Fw0VWGGFmnc7TWg3v-wS5oIxboL2O6tN05rQrKgoiARxfYlxOEZcvr4-3YQI0N1nM7p5ZepHjyjBeo8VB0dz9gFGgkekGJ6NO9OSzsDsaUFXzCuOOnjZXcwADOXjBGn-Wop4gjCXJNaQpTXAeOEWwfbLz80bD4kSGtv-oEEtypTZ-Lgj6M6lwaaflG3xvhWsnMq1ZSyEpwzFoxlauITdk8UCu8X_8wi2usirmtSkDMxhnGpcgxEr9lZ38xaeVoovaoLNWpRcqw9aEYWIXReyHFGruZ_1ThHUOeGRQVO-95HuWFiWM1CzjCSxxqLQqxCSRhpPykE56TML-q61zeMiwV-_zUBQTVUgwfYAn=w1257-h943-no?authuser=0);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#four h1 {
+  font-family: 'Lemonada', cursive;
+  font-weight: 150;
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+}
+
+#four #micro {
+  height: 100vh;
+}
+
+#four #micro img {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.6;
+}
+
+#four #solar {
+  position: relative;
+  text-align: center;
+}
+
+#four #solar h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 100;
+  font-size: larger;
+  text-align: center;
+  color: white;
+}
+
+#four #solar img {
+  width: 300px;
+  height: 300px;
+  margin: 4%;
+  padding: 5%;
+  -webkit-box-shadow: 0 0 8px 2px rgba(226, 215, 215, 0.397);
+          box-shadow: 0 0 8px 2px rgba(226, 215, 215, 0.397);
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  border-radius: 5%;
+}
+
+#four #solar img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+#four #solar a {
+  font-size: large;
+  padding: 1%;
+  margin: 2%;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20%;
+  margin-bottom: 20px;
+}
+
+#four #solar a:hover {
+  color: #111;
+  background: #14a1ff;
+  -webkit-box-shadow: 0 0 40px #14dcff;
+          box-shadow: 0 0 40px #14dcff;
+}
+
+footer, form {
+  margin-top: 20px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  #one {
+    width: auto;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  #one img {
+    overflow: hidden;
+  }
+  #two {
+    overflow: hidden;
+  }
+  #two #pic {
+    height: auto;
+  }
+  #two #pic #flappy {
+    display: none;
+    top: 0;
+    left: 0;
+  }
+  #two #info1 {
+    display: contents;
+    position: relative;
+    width: auto;
+  }
+  #info1 {
+    margin: auto;
+  }
+  #info1 h2, #info1 p {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #info1 svg {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  #three #front img, #three #front svg, #three #back img, #three #back svg {
+    width: 30%;
+    margin: 8%;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+  #three #front img:hover, #three #front svg:hover, #three #back img:hover, #three #back svg:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+#four #solar, #four img, #four a {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=index.css.map */
