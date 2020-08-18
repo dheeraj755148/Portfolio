@@ -57,6 +57,7 @@ nav .navbar-nav li a:hover {
   display: flex;
   height: 100vh;
   width: 100%;
+  background-color: lightblue;
 }
 
 #one img {
@@ -337,7 +338,8 @@ nav .navbar-nav li a:hover {
 }
 
 #four {
-  background-image: url(https://lh3.googleusercontent.com/YZ85zXgNFhFoG_y6PSUNfUI3zI7iKOZciyelX59A2W7PvPay_H-PhnBgWGkEy9CtCCi0QPb4Gz30e9RpuGM8Ixebzzlizo7bmkQWI74P_ll3hXoDHHZFNnmki26_0M3ZyLH7PrKJ29lhS-6buJh3F9DZjDvXKSuNbyD4D5mTiCTa3_Cwhxl4uozmoB8WgxgZw6-xBeeiv_XYCFOxNx-FkNPfoe6RsZidp6FsKv5Smp3W9YzYkbregKFoFyIXX_kd5kAM7sFjl2XLdXxpZq8EQx1tST7DClvJieJlvesLuyjK9aSDQxVtPjeDQc68lpby7XcAQ2aQD0T6qTLrIuWVn-1Fw0VWGGFmnc7TWg3v-wS5oIxboL2O6tN05rQrKgoiARxfYlxOEZcvr4-3YQI0N1nM7p5ZepHjyjBeo8VB0dz9gFGgkekGJ6NO9OSzsDsaUFXzCuOOnjZXcwADOXjBGn-Wop4gjCXJNaQpTXAeOEWwfbLz80bD4kSGtv-oEEtypTZ-Lgj6M6lwaaflG3xvhWsnMq1ZSyEpwzFoxlauITdk8UCu8X_8wi2usirmtSkDMxhnGpcgxEr9lZ38xaeVoovaoLNWpRcqw9aEYWIXReyHFGruZ_1ThHUOeGRQVO-95HuWFiWM1CzjCSxxqLQqxCSRhpPykE56TML-q61zeMiwV-_zUBQTVUgwfYAn=w1257-h943-no?authuser=0);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4b6cb7), to(#182848));
+  background-image: linear-gradient(#4b6cb7, #182848);
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
