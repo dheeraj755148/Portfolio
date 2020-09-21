@@ -415,11 +415,15 @@ nav .navbar-nav li a:hover {
           box-shadow: 0 0 40px #14dcff;
 }
 
-footer, form {
+footer {
   margin-top: 20px;
   width: 100%;
   background-color: black;
   color: white;
+}
+
+footer .last {
+  margin: 0 auto;
 }
 
 @media (max-width: 1000px) {
