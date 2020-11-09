@@ -138,7 +138,8 @@ nav .navbar-nav li a:hover {
 }
 
 @-webkit-keyframes rainbow_animation {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0 0;
   }
   50% {
@@ -147,7 +148,8 @@ nav .navbar-nav li a:hover {
 }
 
 @keyframes rainbow_animation {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0 0;
   }
   50% {
@@ -271,7 +273,7 @@ nav .navbar-nav li a:hover {
 
 #three {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#13547a), to(#80d0c7));
   background-image: linear-gradient(#13547a, #80d0c7);
 }
@@ -288,7 +290,8 @@ nav .navbar-nav li a:hover {
   text-align: center;
 }
 
-#three #front img, #three #front svg {
+#three #front img,
+#three #front svg {
   width: 10%;
   margin: 5%;
   -webkit-transition: -webkit-transform .2s;
@@ -297,15 +300,18 @@ nav .navbar-nav li a:hover {
   transition: transform .2s, -webkit-transform .2s;
 }
 
-#three #front img:hover, #three #front svg:hover {
+#three #front img:hover,
+#three #front svg:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
 
 #three #front h2 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Lemonada', cursive;
   font-weight: 100;
   font-size: larger;
+  color: black;
   text-align: center;
   color: white;
 }
@@ -325,14 +331,16 @@ nav .navbar-nav li a:hover {
 }
 
 #three #back img:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
 
 #three #back h2 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Lemonada', cursive;
   font-weight: 100;
   font-size: larger;
+  color: black;
   text-align: center;
   color: white;
 }
@@ -343,7 +351,7 @@ nav .navbar-nav li a:hover {
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   overflow: hidden;
 }
 
@@ -389,7 +397,6 @@ nav .navbar-nav li a:hover {
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
-  border-radius: 5%;
 }
 
 #four #solar img:hover {
@@ -402,9 +409,12 @@ nav .navbar-nav li a:hover {
   padding: 1%;
   margin: 2%;
   text-decoration: none;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 140;
+  text-align: left;
+  font-size: large;
   color: white;
   border: 1px solid white;
-  border-radius: 20%;
   margin-bottom: 20px;
 }
 
@@ -416,8 +426,7 @@ nav .navbar-nav li a:hover {
 }
 
 footer {
-  margin-top: 20px;
-  width: 100%;
+  margin-top: 1px;
   background-color: black;
   color: white;
 }
@@ -454,7 +463,8 @@ footer .last {
   #info1 {
     margin: auto;
   }
-  #info1 h2, #info1 p {
+  #info1 h2,
+  #info1 p {
     margin: 0 auto;
     text-align: center;
   }
@@ -466,7 +476,10 @@ footer .last {
 }
 
 @media (max-width: 800px) {
-  #three #front img, #three #front svg, #three #back img, #three #back svg {
+  #three #front img,
+  #three #front svg,
+  #three #back img,
+  #three #back svg {
     width: 30%;
     margin: 8%;
     -webkit-transition: -webkit-transform .2s;
@@ -474,13 +487,20 @@ footer .last {
     transition: transform .2s;
     transition: transform .2s, -webkit-transform .2s;
   }
-  #three #front img:hover, #three #front svg:hover, #three #back img:hover, #three #back svg:hover {
+  #three #front img:hover,
+  #three #front svg:hover,
+  #three #back img:hover,
+  #three #back svg:hover {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
+    cursor: pointer;
   }
 }
 
-#four #solar, #four img, #four a {
+#four #solar,
+#four img,
+#four a {
   margin: 0 auto;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=index.css.map */
