@@ -1,408 +1,392 @@
+:root {
+  --animate-delay: 2s;
+}
 @mixin quantum {
-    width: 10%;
-    margin: 5%;
-    transition: transform .2s;
-
-    &:hover{
-        transform: scale(1.5);
-    }
-    
+  width: 10%;
+  margin: 5%;
+  transition: transform 0.2s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+  }
 }
+
 @mixin quantum2 {
-    width: 30%;
-    margin: 8%;
-    transition: transform .2s;
-
-    &:hover{
-        transform: scale(1.5);
-    }
-    
+  width: 30%;
+  margin: 8%;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
 }
 
-
-
-body{
-    margin: auto;
-    padding: auto;
+body {
+  margin: auto;
+  padding: auto;
 }
-html{
-    scroll-behavior: smooth;
-}
-#fan{
-    animation: fan 1.5s infinite ;
-    transform-origin: center;
-    transform-box: fill-box;
 
+html {
+  scroll-behavior: smooth;
 }
-@keyframes fan{
-    from{
-        transform: rotateZ(0deg);
-    }
-    to{
-        transform: rotateZ(360deg);
 
-    }
+#fan {
+  animation: fan 1.5s infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes fan {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 .navbar-custom {
-    background-color:#333;
+  background: linear-gradient(360deg, #1c1c1c 10%, #494949 360%);
 }
 
-nav .navbar-nav li a{
+nav .navbar-nav li a {
+  color: white !important;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
     color: white !important;
-    opacity: 0.6;
-    &:hover{
-        opacity: 1;
-        color: white !important;
-    }
+  }
 }
 
-#one{
-    display: flex;
-    height: 100vh;
+#one {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(360deg, #1c1c1c 10%, #494949 360%);
+  img {
     width: 100%;
-    background-color: lightblue ;
-    img{
-        width: 100%;
-        opacity: 0.8;
+    opacity: 0.8;
+  }
+  #info {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    #icons {
+      width: fit-content;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      i {
+        margin: 0 auto;
+        margin-left: 10px;
+        padding: 7px;
+        transition: transform 0.2s;
+        border: white 2px solid;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
     }
-    #info{
-        width: auto;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        #icons{
-            width: fit-content;
-            height: auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            i{
-                margin: 0 auto;
-                margin-left: 10px;;
-                padding: 7px;
-                transition: transform .2s;
-                border: white 2px solid;
-
-                    &:hover{
-                    transform: scale(1.2);
-                    }                
-            }
-        }
-
-        h1{
-            font-family: 'Lemonada', cursive;
-            font-weight: 150;
-            text-align: center;
-            color: white;
-        }
-        h2{
-            font-family: 'Dancing Script', cursive;
-            font-weight: 100; 
-            font-size: larger;
-            text-align: center;
-            color: white;
-
-        }
-        p{
-            font-family: 'Pacifico', cursive;
-            font-weight: 140; 
-            text-align: center;  
-            font-size: large;
-            color: white;
-
-
-            strong{
-                background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                animation: rainbow_animation 4s ease-in-out infinite;
-                background-size: 400% 100%;
-            }  
-        }
+    h1 {
+      font-family: "Lemonada", cursive;
+      font-weight: 150;
+      text-align: center;
+      color: white;
     }
+    h2 {
+      font-family: "Dancing Script", cursive;
+      font-weight: 100;
+      font-size: larger;
+      text-align: center;
+      color: white;
+    }
+    p {
+      font-family: "Pacifico", cursive;
+      font-weight: 140;
+      text-align: center;
+      font-size: large;
+      color: white;
+      strong {
+        background: linear-gradient(
+          to right,
+          #6666ff,
+          #0099ff,
+          #00ff00,
+          #ff3399,
+          #6666ff
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow_animation 4s ease-in-out infinite;
+        background-size: 400% 100%;
+      }
+    }
+  }
 }
+
 @keyframes rainbow_animation {
-    0%,100% {
-        background-position: 0 0;
-    }
-
-    50% {
-        background-position: 100% 0;
-    }
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
 }
 
-#two{
-    margin: 0 auto;
-    h1{
-        font-family: 'Lemonada', cursive;
-        font-weight: 150;
-        text-align: center;
-        color: black;
-        text-decoration: underline;
-    }
-    #pic{
-        height: 100vh;
-
-    #flappy{
-        position: absolute;
-        top: 15%;
-        left: 25%;
-        display: inline-block;
-        margin: 1%;
-        border-radius: 50%;
-        
-    }
-
-}
-    #info1{
-        a{
-            text-decoration: none;
-            color: lightcoral;
-        }
-        h2{
-            font-family: 'Lemonada', cursive;
-            font-weight: 100; 
-            font-size: xx-large;
-            color: black;
-    
-        }
-        p{
-            font-family: 'Source Code Pro', monospace;
-            font-weight: 140; 
-            text-align: left; 
-            font-size: large;
-            color: black;
-        }
-        strong{
-            font-weight: bold;
-        }
-        svg{
-            width: 350px;
-            height: auto;
-        }
-        #Cirlce{
-            animation: wheel 1.5s infinite linear;
-            transform-origin: center;
-            transform-box: fill-box;
-    }
-    
-        @keyframes wheel{
-            from{
-                transform: rotateY(0deg);
-            }
-            to{
-                transform: rotateY(360deg);
-        
-            }
-        }
-        #Petal{
-            animation: petal 2s infinite alternate;
-            transform-origin: center;
-            transform-box: fill-box;
-    }
-    @keyframes petal{
-        from{
-            transform: rotateY(0deg);
-        }
-        to{
-            transform: rotateY(40deg);
-    
-        }
-    }
-    }
-}
-
-#three{
-    width: 100%;
+#two {
+  margin: 0 auto;
+  h1 {
+    font-family: "Lemonada", cursive;
+    font-weight: 150;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+  }
+  #pic {
     height: 100vh;
-    background-image: linear-gradient(#13547a,#80d0c7) ;
-
-    h1{
-        font-family: 'Lemonada', cursive;
-        font-weight: 150;
-        text-align: center;
-        color: black;
-        text-decoration: underline;
+    #flappy {
+      position: absolute;
+      top: 15%;
+      left: 25%;
+      display: inline-block;
+      margin: 1%;
+      border-radius: 50%;
     }
-    #front{
-        text-align: center;
-        img,svg{
-            @include quantum();
-        }
-        h2{
-            font-family: 'Dancing Script', cursive;
-            font-weight: 100; 
-            font-size: larger;
-            text-align: center;
-            color: white;
-    
-        }
+  }
+  #info1 {
+    a {
+      text-decoration: none;
+      color: lightcoral;
     }
-    #back{
-        top: 50%;
-        text-align: center;
-        img{
-            @include quantum();
-       }
-       h2{
-        font-family: 'Dancing Script', cursive;
-        font-weight: 100; 
-        font-size: larger;
-        text-align: center;
-        color: white;
-
+    h2 {
+      font-family: "Lemonada", cursive;
+      font-weight: 100;
+      font-size: xx-large;
+      color: black;
     }
+    p {
+      font-family: "Source Code Pro", monospace;
+      font-weight: 140;
+      text-align: left;
+      font-size: large;
+      color: black;
     }
-}
-#four{
-    background-image:linear-gradient(#4b6cb7,#182848);
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    h1{
-        font-family: 'Lemonada', cursive;
-        font-weight: 150;
-        text-align: center;
-        color: white;
-        text-decoration: underline;
-    }   
-
-    #micro{
-        height: 100vh;
-        img{
-            width: 100%;
-            height: 100vh;
-            opacity: 0.6;
-        }
+    strong {
+      font-weight: bold;
     }
-    #solar{
-        position: relative;
-        text-align: center;
-
-        h2{
-            font-family: 'Dancing Script', cursive;
-            font-weight: 100; 
-            font-size: larger;
-            text-align: center;
-            color: white;
-
-        }
-        img{
-            width: 300px;
-            height: 300px;
-            margin: 4%;
-            padding: 5%;
-            box-shadow: 0 0 8px 2px rgba(226, 215, 215, 0.397);
-            transition: transform .5s;
-            border-radius: 5%;
-            &:hover{
-                transform: scale(1.02);
-                }           
-        
-        }
-        a{
-            font-size: large;
-            padding: 1%;
-            margin: 2%;
-            text-decoration: none;
-            color: white;
-            border: 1px solid white;
-            border-radius: 20%;
-            margin-bottom: 20px;
-            &:hover{
-            color: #111; 
-            background: #14a1ff; 
-            box-shadow: 0 0 40px #14dcff; 
-
-            }
-
-        }
+    svg {
+      width: 350px;
+      height: auto;
     }
-
+    #Cirlce {
+      animation: wheel 1.5s infinite linear;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+    @keyframes wheel {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(360deg);
+      }
+    }
+    #Petal {
+      animation: petal 2s infinite alternate;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+    @keyframes petal {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(40deg);
+      }
+    }
+  }
 }
 
+#three {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(#13547a, #80d0c7);
+  h1 {
+    font-family: "Lemonada", cursive;
+    font-weight: 150;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+  }
+  #front {
+    text-align: center;
+    img,
+    svg {
+      @include quantum();
+    }
+    h2 {
+      font-family: "Lemonada", cursive;
+      font-weight: 100;
+      font-size: larger;
+      color: black;
+      text-align: center;
+      color: white;
+    }
+  }
+  #back {
+    top: 50%;
+    text-align: center;
+    img {
+      @include quantum();
+    }
+    h2 {
+      font-family: "Lemonada", cursive;
+      font-weight: 100;
+      font-size: larger;
+      color: black;
+      text-align: center;
+      color: white;
+    }
+  }
+}
 
-
-footer,form{
-    margin-top: 20px;
-    width: 100%;
-    background-color:black ;
+#four {
+  background-image: linear-gradient(#4b6cb7, #182848);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: hidden;
+  h1 {
+    font-family: "Lemonada", cursive;
+    font-weight: 150;
+    text-align: center;
     color: white;
+    text-decoration: underline;
+  }
+  #micro {
+    height: 100vh;
+    img {
+      width: 100%;
+      height: 100vh;
+      opacity: 0.6;
+    }
+  }
+  #solar {
+    position: relative;
+    text-align: center;
+    h2 {
+      font-family: "Dancing Script", cursive;
+      font-weight: 100;
+      font-size: larger;
+      text-align: center;
+      color: white;
+    }
+    img {
+      width: 300px;
+      height: 300px;
+      margin: 4%;
+      padding: 5%;
+      box-shadow: 0 0 8px 2px rgba(226, 215, 215, 0.397);
+      transition: transform 0.5s;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+    a {
+      font-size: large;
+      padding: 1%;
+      margin: 2%;
+      text-decoration: none;
+      font-family: "Source Code Pro", monospace;
+      font-weight: 140;
+      text-align: left;
+      font-size: large;
+      color: white;
+      border: 1px solid white;
+      margin-bottom: 20px;
+      &:hover {
+        color: #111;
+        background: #14a1ff;
+        box-shadow: 0 0 40px #14dcff;
+      }
+    }
+  }
 }
 
+footer {
+  margin-top: 1px;
+  background-color: black;
+  color: white;
+  .last {
+    margin: 0 auto;
+  }
+}
 
 @media (max-width: 1000px) {
-    
-
-    #one{
-        width: auto;
-        height: 100vh;
-        overflow-y: hidden;
-        img{
-            overflow: hidden;
-        
-        }
-
+  #one {
+    width: auto;
+    height: 100vh;
+    overflow-y: hidden;
+    img {
+      overflow: hidden;
     }
-
-
-
-    #two{
-        overflow: hidden;
-        #pic{
-            height: auto;
-
-            #flappy{
-
-            display: none;
-            top: 0;
-            left: 0;
-    
-        }}
-        #info1{
-            display: contents;
-            position: relative;
-            width: auto;
-            
-    
-        }
-
+  }
+  #two {
+    overflow: hidden;
+    #pic {
+      height: auto;
+      #flappy {
+        display: none;
+        top: 0;
+        left: 0;
+      }
     }
-
-    #info1{
-        margin:auto;
-       h2,p{
-            margin: 0 auto;
-            text-align: center;
-        }
-        svg{
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-        }
+    #info1 {
+      display: contents;
+      position: relative;
+      width: auto;
     }
+  }
+  #info1 {
+    margin: auto;
+    h2,
+    p {
+      margin: 0 auto;
+      text-align: center;
+    }
+    svg {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 800px) {
-
-#three{
-    #front,#back{
-        img,svg{
-                @include quantum2();
-            
-        }
+  #three {
+    #front,
+    #back {
+      img,
+      svg {
+        @include quantum2();
+      }
     }
-}}
+  }
+}
 
-#four{
-    #solar,img,a{
-        margin: 0 auto;
-    }
+#four {
+  #solar,
+  img,
+  a {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
 }
