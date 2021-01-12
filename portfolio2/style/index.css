@@ -13,43 +13,49 @@ html {
 
 #fan {
   -webkit-animation: fan 1.5s infinite;
-  animation: fan 1.5s infinite;
+          animation: fan 1.5s infinite;
   -webkit-transform-origin: center;
-  transform-origin: center;
+          transform-origin: center;
   transform-box: fill-box;
 }
 
 @-webkit-keyframes fan {
   from {
     -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
   }
   to {
     -webkit-transform: rotateZ(360deg);
-    transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
   }
 }
 
 @keyframes fan {
   from {
     -webkit-transform: rotateZ(0deg);
-    transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
   }
   to {
     -webkit-transform: rotateZ(360deg);
-    transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
   }
 }
 
 .navbar-custom {
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(10%, #1c1c1c),
-    color-stop(360%, #494949)
-  );
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #1c1c1c), color-stop(360%, #494949));
   background: linear-gradient(360deg, #1c1c1c 10%, #494949 360%);
+}
+
+nav .nav-item {
+  margin-left: 20px;
+}
+
+nav .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+nav .custom-toggler.navbar-toggler {
+  border-color: #ff66cb;
 }
 
 nav .navbar-nav li a {
@@ -59,7 +65,7 @@ nav .navbar-nav li a {
 
 nav .navbar-nav li a:hover {
   opacity: 1;
-  color: white !important;
+  color: #FA490A !important;
 }
 
 #one {
@@ -68,13 +74,7 @@ nav .navbar-nav li a:hover {
   display: flex;
   height: 100vh;
   width: 100%;
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(10%, #1c1c1c),
-    color-stop(360%, #494949)
-  );
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #1c1c1c), color-stop(360%, #494949));
   background: linear-gradient(360deg, #1c1c1c 10%, #494949 360%);
 }
 
@@ -90,7 +90,7 @@ nav .navbar-nav li a:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #one #info #icons {
@@ -102,7 +102,7 @@ nav .navbar-nav li a:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #one #info #icons i {
@@ -118,7 +118,7 @@ nav .navbar-nav li a:hover {
 
 #one #info #icons i:hover {
   -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #one #info h1 {
@@ -145,29 +145,13 @@ nav .navbar-nav li a:hover {
 }
 
 #one #info p strong {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#6666ff),
-    color-stop(#0099ff),
-    color-stop(#00ff00),
-    color-stop(#ff3399),
-    to(#6666ff)
-  );
-  background: linear-gradient(
-    to right,
-    #6666ff,
-    #0099ff,
-    #00ff00,
-    #ff3399,
-    #6666ff
-  );
+  background: -webkit-gradient(linear, left top, right top, from(#6666ff), color-stop(#0099ff), color-stop(#00ff00), color-stop(#ff3399), to(#6666ff));
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-animation: rainbow_animation 4s ease-in-out infinite;
-  animation: rainbow_animation 4s ease-in-out infinite;
+          animation: rainbow_animation 4s ease-in-out infinite;
   background-size: 400% 100%;
 }
 
@@ -247,74 +231,68 @@ nav .navbar-nav li a:hover {
 
 #two #info1 #Cirlce {
   -webkit-animation: wheel 1.5s infinite linear;
-  animation: wheel 1.5s infinite linear;
+          animation: wheel 1.5s infinite linear;
   -webkit-transform-origin: center;
-  transform-origin: center;
+          transform-origin: center;
   transform-box: fill-box;
 }
 
 @-webkit-keyframes wheel {
   from {
     -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   to {
     -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
 @keyframes wheel {
   from {
     -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   to {
     -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
 #two #info1 #Petal {
   -webkit-animation: petal 2s infinite alternate;
-  animation: petal 2s infinite alternate;
+          animation: petal 2s infinite alternate;
   -webkit-transform-origin: center;
-  transform-origin: center;
+          transform-origin: center;
   transform-box: fill-box;
 }
 
 @-webkit-keyframes petal {
   from {
     -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   to {
     -webkit-transform: rotateY(40deg);
-    transform: rotateY(40deg);
+            transform: rotateY(40deg);
   }
 }
 
 @keyframes petal {
   from {
     -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   to {
     -webkit-transform: rotateY(40deg);
-    transform: rotateY(40deg);
+            transform: rotateY(40deg);
   }
 }
 
 #three {
   width: 100%;
   height: auto;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#13547a),
-    to(#80d0c7)
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#13547a), to(#80d0c7));
   background-image: linear-gradient(#13547a, #80d0c7);
 }
 
@@ -344,7 +322,7 @@ nav .navbar-nav li a:hover {
 #three #front svg:hover {
   cursor: pointer;
   -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 #three #front h2 {
@@ -373,7 +351,7 @@ nav .navbar-nav li a:hover {
 #three #back img:hover {
   cursor: pointer;
   -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 #three #back h2 {
@@ -386,13 +364,7 @@ nav .navbar-nav li a:hover {
 }
 
 #four {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#4b6cb7),
-    to(#182848)
-  );
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4b6cb7), to(#182848));
   background-image: linear-gradient(#4b6cb7, #182848);
   height: 100%;
   width: 100%;
@@ -438,7 +410,7 @@ nav .navbar-nav li a:hover {
   margin: 4%;
   padding: 5%;
   -webkit-box-shadow: 0 0 8px 2px rgba(226, 215, 215, 0.397);
-  box-shadow: 0 0 8px 2px rgba(226, 215, 215, 0.397);
+          box-shadow: 0 0 8px 2px rgba(226, 215, 215, 0.397);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -447,7 +419,7 @@ nav .navbar-nav li a:hover {
 
 #four #solar img:hover {
   -webkit-transform: scale(1.02);
-  transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 #four #solar a {
@@ -468,7 +440,7 @@ nav .navbar-nav li a:hover {
   color: #111;
   background: #14a1ff;
   -webkit-box-shadow: 0 0 40px #14dcff;
-  box-shadow: 0 0 40px #14dcff;
+          box-shadow: 0 0 40px #14dcff;
 }
 
 footer {
@@ -538,7 +510,7 @@ footer .last {
   #three #back img:hover,
   #three #back svg:hover {
     -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+            transform: scale(1.5);
     cursor: pointer;
   }
 }
